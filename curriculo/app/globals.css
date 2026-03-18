@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+}
+
+.nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #00c6ff;
+}
+
+button:hover {
+  background: #0072ff;
+  color: white;
+}
+
+.teclado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.palavra {
+  font-size: 32px;
+  letter-spacing: 10px;
+}
+
+.win { color: #00ffae; }
+.lose { color: #ff4d4d; }
+.erradas { color: #ff9999; }
+
+/* FORCA */
+.forca {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  margin: 20px auto;
+}
+
+.poste {
+  position: absolute;
+  left: 20px;
+  width: 10px;
+  height: 200px;
+  background: white;
+}
+
+.trave {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 100px;
+  height: 10px;
+  background: white;
+}
+
+.corda {
+  position: absolute;
+  top: 10px;
+  left: 110px;
+  width: 2px;
+  height: 30px;
+  background: white;
+}
+
+.cabeca {
+  position: absolute;
+  top: 40px;
+  left: 95px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.corpo {
+  position: absolute;
+  top: 70px;
+  left: 110px;
+  width: 3px;
+  height: 60px;
+  background: white;
+}
+
+.braco.esquerdo {
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 40px;
+  height: 3px;
+  background: white;
+  transform: rotate(-30deg);
+  transform-origin: left;
+}
+
+.braco.direito {
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 40px;
+  height: 3px;
+  background: white;
+  transform: rotate(30deg);
+  transform-origin: left;
+}
+
+.perna.esquerda {
+  position: absolute;
+  top: 130px;
+  left: 110px;
+  width: 40px;
+  height: 3px;
+  background: white;
+  transform: rotate(30deg);
+  transform-origin: left;
+}
+
+.perna.direita {
+  position: absolute;
+  top: 130px;
+  left: 110px;
+  width: 40px;
+  height: 3px;
+  background: white;
+  transform: rotate(-30deg);
+  transform-origin: left;
+}
