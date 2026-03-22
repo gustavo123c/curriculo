@@ -1,66 +1,103 @@
 export default function Home() {
   return (
     <main className="container">
-      <header className="header">
-  <img src="/foto.jpg" alt="Gustavo" className="foto" />
 
-  <h1>Gustavo Costa</h1>
-  <p>Desenvolvedor | Ciencia da Computacao</p>
-</header>
 
-      <section className="grid">
-        <div className="card">
-          <h3>Perfil</h3>
+      <section className="hero">
+         <img src="/foto.jpg" alt="Gustavo" className="hero-foto" />
+
+        <div className="hero-texto">
+          <h1>Olá, eu sou <span>Gustavo Costa</span></h1>
           <p>
-            Estudante de Ciencia da Computacao apaixonado por tecnologia,
-            desenvolvimento de software e resolucao de problemas.
+            Estudante de Ciência da Computação na UNICAP.
+            Apaixonado por tecnologia e desenvolvimento web.
           </p>
-          <p>
-            Experiencia com desenvolvimento web utilizando React, Next.js e
-            logica de programacao com C, Java e Python.
-          </p>
-        </div>
-
-        <div className="card">
-          <h3>Educacao</h3>
-          <p>UNICAP - Ciencia da Computacao</p>
-          <p>2024 - 2028 | 5 periodo</p>
-        </div>
-
-        <div className="card">
-          <h3>Experiencia</h3>
-          <p>🚀 Projeto de Startup Universitaria (2024)</p>
-          <p>💻 Desenvolvimento de sistemas web</p>
-          <p>🧠 Resolucao de problemas com algoritmos</p>
-        </div>
-
-        <div className="card">
-          <h3>Habilidades</h3>
-          <ul>
-            <li>💻 C, Java, Python, SQL</li>
-            <li>🌐 HTML, CSS, JavaScript</li>
-            <li>⚛️ React, Next.js</li>
-            <li>🛠️ Git e GitHub</li>
-          </ul>
-        </div>
-
-        <div className="card">
-          <h3>Diferenciais</h3>
-          <ul>
-            <li>Facilidade em aprender novas tecnologias</li>
-            <li>Boa logica de programacao</li>
-            <li>Proatividade e trabalho em equipe</li>
-            <li>Interesse em desenvolvimento full stack</li>
-          </ul>
-        </div>
-
-        <div className="card">
-          <h3>Contato</h3>
-          <p>📞 81 99577-3770</p>
-          <p>📧 gustavocavalcantimc@gmail.com</p>
-          <p>📍 Recife - PE</p>
+          <a href="/forca" className="hero-btn">Ver meu projeto →</a>
         </div>
       </section>
+
+      {/* Habilidades */}
+      <p className="secao-titulo">Habilidades</p>
+      <div className="grid">
+
+        <div className="card">
+          <div className="card-icone">💻</div>
+          <h3>Linguagens</h3>
+          <div className="tags">
+            <span className="tag">C</span>
+            <span className="tag">Java</span>
+            <span className="tag">Python</span>
+            <span className="tag">SQL</span>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card-icone">🌐</div>
+          <h3>Frontend</h3>
+          <div className="tags">
+            <span className="tag">HTML</span>
+            <span className="tag">CSS</span>
+            <span className="tag">JavaScript</span>
+            <span className="tag">React</span>
+            <span className="tag">Next.js</span>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card-icone">🛠️</div>
+          <h3>Ferramentas</h3>
+          <div className="tags">
+            <span className="tag">Git</span>
+            <span className="tag">GitHub</span>
+            <span className="tag">VS Code</span>
+            <span className="tag">Linux</span>
+          </div>
+        </div>
+
+      </div>
+
+     
+      <p className="secao-titulo">Formação & Experiência</p>
+      <div className="grid">
+
+        <div className="card">
+          <div className="card-icone">🎓</div>
+          <h3>Educação</h3>
+          <ul>
+            <li>UNICAP — Ciência da Computação</li>
+            <li>2024 – 2028 · 5º período</li>
+          </ul>
+        </div>
+
+        <div className="card">
+          <div className="card-icone">🚀</div>
+          <h3>Experiência</h3>
+          <ul>
+            <li>Startup Universitária (2024)</li>
+            <li>Desenvolvimento de sistemas web</li>
+            <li>Resolução de problemas com algoritmos</li>
+          </ul>
+        </div>
+
+        <div className="card">
+          <div className="card-icone">⭐</div>
+          <h3>Diferenciais</h3>
+          <ul>
+            <li>Aprende novas tecnologias rápido</li>
+            <li>Boa lógica de programação</li>
+            <li>Proativo e trabalha bem em equipe</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p className="secao-titulo">Contato</p>
+      <ul className="contato-lista">
+        <li>📞 (81) 99577-3770</li>
+        <li>📧 gustavocavalcantimc@gmail.com</li>
+        <li>📍 Recife — Pernambuco</li>
+      </ul>
+
     </main>
   );
 }
